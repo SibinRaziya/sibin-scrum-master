@@ -397,23 +397,36 @@ a.float:hover+div.label-container {
 							</div>
 							<!-- input states -->
 							<div class="form-group">
-								<label for="summary">Summary</label> <input
-									type="text" class="form-control" id="summary"
-									placeholder="Enter email">
+								<label for="summary">Summary</label> <input type="text"
+									class="form-control" id="summary">
 							</div>
 							<div class="form-group">
-								<label class="col-form-label" for="inputWarning"><i
-									class="far fa-bell"></i> Input with warning</label> <input type="text"
-									class="form-control is-warning" id="inputWarning"
-									placeholder="Enter ...">
-							</div>
-							<div class="form-group">
-								<label class="col-form-label" for="inputError"><i
-									class="far fa-times-circle"></i> Input with error</label> <input
-									type="text" class="form-control is-invalid" id="inputError"
-									placeholder="Enter ...">
+								<label for="exampleInputFile">Attachment</label>
+								<div class="input-group">
+									<div class="custom-file">
+										<input type="file" class="custom-file-input"
+											id="exampleInputFile"> <label
+											class="custom-file-label" for="exampleInputFile">Choose
+											file</label>
+									</div>
+									<div class="input-group-append">
+										<span class="input-group-text" id="">Upload</span>
+									</div>
+								</div>
 							</div>
 
+							<div class="form-group">
+								<label>Linked Issues</label> <select class="form-control">
+									<option value="blocks">blocks</option>
+									<option value="is blocked by">is blocked by</option>
+									<option value="clones">clones</option>
+									<option value="is cloned by">is cloned by</option>
+									<option value="duplicates">duplicates</option>
+									<option value="is duplicated by">is duplicated by</option>
+									<option value="relates to">relates to</option>
+								</select>
+
+							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<!-- checkbox -->
